@@ -1,0 +1,89 @@
+
+//<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://example.com/fontawesome/vVERSION/js/all.js" data-auto-replace-svg></script>
+
+<div id="container1">
+
+<h1 id="title2">WEATHER APP</h1>
+
+
+<sly data-sly-use.ob2="com.mysite.core.models.WeatherFetch2"></sly>
+
+  <div id="formhide">
+
+    <form action="">
+        <div>
+            <label id="lab1" for="latitude" style="color: antiquewhite;">latitude</label>
+            <input type="text" name="latitude" id="lat">
+        </div>
+
+        <div>
+            <label id="lab2" for="longitude" style="color: antiquewhite;">latitude</label>
+            <input type="text" name="longitude" id="lon">
+        </div>
+
+        <button id="weather1">GET</button>
+    </form>
+
+  </div>
+
+<div id="sub-container1">
+
+   <div class="sub-con"> 
+   <i id="icon1" class="fa-solid fa-temperature-three-quarters"></i>
+   <p>temperature:</p> <p id="temp"> ${ob2.temp}°C</p> 
+
+   </div>
+
+  <div class="sub-con">
+  <i id="icon1" class="fa-solid fa-droplet"></i>
+   <p class="">humidity: </p>  <p id="humid">${ob2.humidity}</p> 
+
+  </div>
+
+    <div class="sub-con">
+    <i id="icon1" class="fa-solid fa-place-of-worship"></i>
+    <p>placeName:</p>  <p id="placeName"> ${ob2.name}</p> 
+
+    </div>
+
+    <div class="sub-con">
+    <i id="icon1" class="fa-solid fa-cloud"></i>
+
+    <p>description:</p> <p id="desc"> ${ob2.description}</p> 
+    
+    </div>
+
+    <div class="sub-con">
+    <i id="icon1" class="fa-solid fa-wind"></i>
+    <p>pressure: </p>   <p id="pressur">${ob2.pressure}</p>
+    </div>
+
+
+    <div class="sub-con">
+    <i id="icon1" class="fa-solid fa-globe"></i>
+    <p>country: </p>   <p id="country">${ob2.country}</p>
+    </div>
+
+
+    <div class="sub-con">
+    <i id="icon1" class="fa-solid fa-sun"></i>
+    <p>sunrise: </p>   <p id="sunrise">${ob2.sunrise}AM</p>
+    </div>
+
+    <div class="sub-con">
+     <i id="icon1" class="fa-solid fa-sun"></i>
+    <p>sunset: </p>   <p id="sunset">${ob2.sunset}PM</p>
+    </div>
+
+    <div class="img2">
+     <img id="icon2" src=http://openweathermap.org/img/w/${ob2.icon}.png alt="i">
+    </div>
+
+
+
+
+
+</div>
+
+</div>

@@ -1,0 +1,53 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333; /* Dark text for contrast */
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; /* White background for the container */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        #title1 {
+            text-align: center;
+            color: #1e90ff; /* DodgerBlue color for the title */
+            font-size: 2em; /* Larger font size for the title */
+            margin-bottom: 20px;
+        }
+
+        #sub-container {
+            font-size: 1.2em; /* Slightly larger font size for readability */
+            line-height: 1.6; /* Increased line height for readability */
+        }
+
+        #sub-container p {
+            margin: 10px 0; /* Spacing between paragraphs */
+        }
+
+        #sub-container img {
+            display: block;
+            margin: 20px auto; /* Center the image and add margin */
+            max-width: 100px; /* Limit image size */
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            #title1 {
+                font-size: 1.5em; /* Adjust font size for smaller screens */
+            }
+
+            #sub-container {
+                font-size: 1em; /* Adjust font size for smaller screens */
+            }
+
+            #sub-container img {
+                max-width: 80px; /* Adjust image size for smaller screens */
+            }
+        }

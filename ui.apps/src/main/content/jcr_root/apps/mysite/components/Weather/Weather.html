@@ -1,0 +1,26 @@
+
+<div id="container">
+<h1 id="title1">weather task</h1>
+
+<sly data-sly-use.ob1="com.mysite.core.models.Api2"></sly>
+
+
+<div id="sub-container">
+<p>name: ${ob1.name}</p>
+
+<p>humidity: ${ob1.humidity}</p>
+
+<p>latitude: ${ob1.weatherDescription}</p>
+
+<p>windspeed: ${ob1.windspeed}</p>
+
+<p>degree: ${ob1.degree}°C</p>
+
+<p>longitude: ${ob1.longitude}</p>
+
+<p>description: ${ob1.description}</p>
+
+ <img id="img1" src=http://openweathermap.org/img/w/${ob1.icon}.png alt="image">
+
+</div>
+</div>
